@@ -12,8 +12,8 @@ class TabsView extends StatefulWidget {
 class _TabsViewState extends State<TabsView> {
   int _selectedViewIndex = 0;
   final List<Map<String,Object>> _views = [
-    {'title': 'Lista de Categorias', 'view': const CategoriesView()},
-    {'title': 'Meus Favoritos', 'view': const FavoriteView()}
+    {'title': 'Categories', 'view': const CategoriesView()},
+    {'title': 'Favorites', 'view': const FavoriteView()}
     ];
 
   _selectView(int index) {
@@ -39,9 +39,9 @@ class _TabsViewState extends State<TabsView> {
         currentIndex: _selectedViewIndex,
         items: const [
           BottomNavigationBarItem(
-              icon: Icon(Icons.category), label: 'Categorias'),
+              icon: Icon(Icons.category), label: 'Categories'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.category), label: 'Favoritos '),
+              icon: Icon(Icons.category), label: 'Favorites '),
         ],
       ),
     );
