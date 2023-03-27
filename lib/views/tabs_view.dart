@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meals/components/main_drawer.dart';
 import 'package:meals/views/categories_view.dart';
 import 'package:meals/views/favorite_view.dart';
 
@@ -30,6 +31,7 @@ class _TabsViewState extends State<TabsView> {
         title: Text(_views[_selectedViewIndex]['title'] as String),
         centerTitle: true,
       ),
+      drawer: const MainDrawer(),
       body: _views[_selectedViewIndex]['view'] as Widget,
       bottomNavigationBar: BottomNavigationBar(
         onTap: _selectView,
