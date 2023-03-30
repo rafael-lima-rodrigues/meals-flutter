@@ -4,7 +4,7 @@ Meals is the App I developed using Flutter Framework. This App was dveloped duri
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-<img src="/docs/screenshoot_main.png" width="260">&emsp;<img src="/docs/meal_list_catogory.png" width="260">&emsp;<img src="/docs/step_ingredients.png" width="260">&emsp;<img src="/docs/favorite_screen.png" width="260">
+<img src="/docs/screenshoot_main.png" width="200">&emsp;<img src="/docs/meal_list_catogory.png" width="200">&emsp;<img src="/docs/step_ingredients.png" width="200">&emsp;<img src="/docs/favorite_screen.png" width="200">
 
 ## Technologies
 * Dart
