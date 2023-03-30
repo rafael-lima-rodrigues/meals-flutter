@@ -4,6 +4,12 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:meals/models/meal.dart';
 
 class MealDetailView extends StatelessWidget {
+
+  final Function(Meal) onToggleFavorite;
+  final bool Function(Meal) isFavoriteMeal;
+
+  const MealDetailView(this.onToggleFavorite, this.isFavoriteMeal);
+
   Widget _createSectionTitle(BuildContext context, String title) {
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 10),
@@ -78,6 +84,13 @@ class MealDetailView extends StatelessWidget {
                 }))
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(isFavoriteMeal(meal) ? Icons.star : Icons.star_border),
+        onPressed: () {
+          onToggleFavorite(meal);
+        },
+
       ),
     );
   }
